@@ -54,7 +54,7 @@ Inside `sync-demo.js`, Enter the following code:
 
   ```js
   var fs = require('fs');
-  var data = fs.readdirSync('c:/');
+  var data = fs.readdirSync('../');
   console.log('data: ', data);
   console.log("This code is last");
   ```
@@ -75,7 +75,7 @@ Create a new file called `async-demo.js` and enter the following code in the fil
        console.log('data: ', data)
    }
 
-   fs.readdir('c:/', phoneNumber);
+   fs.readdir('../', phoneNumber);
    console.log("This code is last");
   ```
 Execute the script and take note of the sequence of the output.
@@ -88,7 +88,7 @@ Create a new file called async-demo2.js. Enter the following code:
   ```js
     var fs = require('fs');
 
-    fs.readdir('c:/', function(err, data) {
+    fs.readdir('../', function(err, data) {
         console.log('data: ', data)
     });
 
@@ -238,7 +238,7 @@ Give that a test. It is much simpler, and the name property that is contained in
 2.	Let’s read the directory with an asynchronous function from the File System API called readdir(). It will take a path and callback as parameters. The first callback parameter will return an error or the data that is read:
 
   ```js
-   fs.readdir('c:/', function(err, data) {
+   fs.readdir('../', function(err, data) {
        console.log(data);
    });
   ```
