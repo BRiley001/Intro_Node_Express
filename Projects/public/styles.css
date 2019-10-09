@@ -1,0 +1,21 @@
+section.digi {
+    border: 5px solid black;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+section.digi p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section.digi img {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
